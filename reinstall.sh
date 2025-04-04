@@ -1204,7 +1204,7 @@ Continue?
                 #            https://mirror.nju.edu.cn/ubuntu-cloud-images/releases/
 
                 # mirrors.cloud.tencent.com
-                ci_mirror=https://mirror.nju.edu.cn/ubuntu-releases/24.04
+                ci_mirror=https://mirror.nju.edu.cn/ubuntu-cloud-images
             else
                 ci_mirror=https://cloud-images.ubuntu.com
             fi
@@ -1238,12 +1238,12 @@ Continue?
             # 传统安装
             if is_in_china; then
                 case "$basearch" in
-                "x86_64") mirror=https://mirror.nju.edu.cn/ubuntu-releases/24.04/$releasever ;;
+                "x86_64") mirror=https://mirror.nju.edu.cn/ubuntu-releases/$releasever ;;
                 "aarch64") mirror=https://mirror.nju.edu.cn/ubuntu-cdimage/releases/$releasever/release ;;
                 esac
             else
                 case "$basearch" in
-                "x86_64") mirror=https://mirror.nju.edu.cn/ubuntu-releases/24.04/$releasever ;;
+                "x86_64") mirror=https://releases.ubuntu.com/$releasever ;;
                 "aarch64") mirror=https://cdimage.ubuntu.com/releases/$releasever/release ;;
                 esac
             fi
